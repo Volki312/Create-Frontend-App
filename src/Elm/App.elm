@@ -36,7 +36,10 @@ update msg model =
 
 view : Model -> Html Msg
 view model =
-    h2 [] [ text "Hello Elm!" ]
+    div [] [
+    img [ src "./elm-logo.png", alt "Elm" ] []
+    , h1 [] [ text "Elm" ]
+    ]
 
 
 

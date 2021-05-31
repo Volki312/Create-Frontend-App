@@ -5,3 +5,25 @@
 @use 'typescript';
 @use 'svelte';
 @use 'elm';
+
+body {
+	margin: 0;
+
+	& > div {
+		margin-bottom: 1rem;
+		padding: 1rem 0;
+	}
+}
+
+.title {
+	text-align: center;
+	margin: 0;
+	font-size: 45px;
+	letter-spacing: 0.01em;
+}
+
+.logo {
+	margin: 0 auto;
+	height: 40px;
+	display: block;
+}

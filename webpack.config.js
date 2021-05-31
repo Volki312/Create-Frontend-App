@@ -9,6 +9,25 @@ module.exports = {
 	module: {
 		rules: [
 			{
+				test: /\.svg$/,
+				use: [
+					{
+						loader: "svg-url-loader",
+						options: {
+							limit: 10000
+						}
+					}
+				]
+			},
+			{
+				test: /\.(png|jpe?g|gif)$/i,
+				use: [
+					{
+						loader: "file-loader"
+					}
+				]
+			},
+			{
 				test: /\.tsx?$/,
 				use: "ts-loader",
 				exclude: /(node_modules|bower_components|elm-stuff)/

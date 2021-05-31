@@ -1,1 +1,1 @@
-<h2>Hello Svelte!</h2>
+<h1>Hello Svelte!</h1>
